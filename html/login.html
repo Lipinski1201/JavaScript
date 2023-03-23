@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleLogin.css">
+    <title>Login</title>
+    <style>
+        
+body
+{
+  background: #eee;
+  font-family: 'Ubuntu', sans-serif;
+}
+.container
+{
+  width: 50%;
+  margin: 3rem auto;
+}
+
+#loginForm
+{
+  background: #FFF;
+  padding: 2rem;
+}
+
+#loginForm h2
+{
+  text-align: center;
+}
+
+#loginForm label
+{
+  display: block;
+}
+
+#loginForm input
+{
+  padding: 5px;
+}
+#loginForm input[type=text]
+{
+  width: 95%;
+}
+#loginForm #password
+{
+  width: 75%;
+}
+
+.button
+{
+  background: #eee;
+  border: 1px solid #999;
+  cursor: pointer;
+  padding: 6px !important;
+}
+
+.button:hover
+{
+  background: #ddd;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <form action="" id="loginForm">
+          <h2>Login</h2>
+          <p><label for="username">Usuario</label><input type="text" name="username" id="username" placeholder="username" /></p>
+          <p><label for="password">Senha</label><input type="password" name="password" id="password" placeholder="password" /> <input type="button" id="showPassword" value="show" class="button" /></p>
+          <p><input type="submit" value="Login" class="button" /> <input type="submit" value="cadastrar usuario" class="bnt1" /></p>
+          
+        </form>
+      </div>
+
+</html>
