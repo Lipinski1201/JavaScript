@@ -10,8 +10,27 @@
         
 body
 {
-    background-image: radial-gradient(circle at 92.46% 7.54%, #ff9a71 0, #ff9178 6.25%, #ff8680 12.5%, #ff7b88 18.75%, #ff6f90 25%, #ff6299 31.25%, #ff55a2 37.5%, #ff48ab 43.75%, #f23cb5 50%, #df34bf 56.25%, #ca33ca 62.5%, #b037d5 68.75%, #903fe0 75%, #6547ea 81.25%, #004ff3 87.5%, #0057fa 93.75%, #005dfe 100%);  font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
 }
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .container
 {
   width: 50%;
@@ -21,8 +40,9 @@ body
 
 #loginForm
 {
-  background: #FFF;
+  background: white;
   padding: 2rem;
+  opacity: 0.4;
 }
 
 #loginForm h2
@@ -54,6 +74,8 @@ body
   border: 1px solid #999;
   cursor: pointer;
   padding: 6px !important;
+  
+
 }
 
 .button:hover
